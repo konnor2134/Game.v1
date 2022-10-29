@@ -1,9 +1,11 @@
 package game;
 
-public class Enemy {
+public abstract class Enemy implements Mortal {
     int health;
+    String name;
 
-    public Enemy(int health) {
+    public Enemy(String name,int health) {
+        this.name = name;
         this.health = health;
     }
 
@@ -14,12 +16,23 @@ public class Enemy {
     public void setHealth(int health) {
         this.health = health;
     }
+
     public int takeDamage(int damage) {
         health -= damage;
-        System.out.println(" у врага осталось " + getHealth() + " хп ");
+        System.out.println(" the enemy has left " + getHealth() + " hp ");
 
         return health;
 
     }
+    @Override
+    public boolean isAlive() {
+        if (getHealth() > 0) {
+            System.out.println("Enemy "+ name + " is alive");
+            return true;
+        }
+        System.out.println("Enemy "+ name + " is dead");
+        return false;
+    }
+    abstract void attackHero(Hero attack);
 }
 

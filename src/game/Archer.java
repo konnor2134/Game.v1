@@ -1,13 +1,13 @@
 package game;
 
 public class Archer extends Hero {
-    public Archer(String name) {
-        super(name);
+    public Archer(String name,int health) {
+        super(name,health);
     }
 
     @Override
-    void attackEnemy(Enemy taken) {
-        System.out.print(name + " стреляет");
-        taken.takeDamage(15);
+    void attackEnemy(Enemy attack) {
+        System.out.print(name + " shoots a bow,");
+        attack.takeDamage(15);
     }
 }

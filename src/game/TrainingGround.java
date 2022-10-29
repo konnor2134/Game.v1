@@ -2,21 +2,19 @@ package game;
 
 public class TrainingGround {
 
-    public TrainingGround() {
-    }
-
     public static void main(String[] args) {
-        Hero first = new Hero("Dima");
-        Enemy firstEnemy = new Enemy(100);
+
+        /*Enemy firstEnemy = new Enemy(100);
         Enemy secondEnemy = new Enemy(100);
         Enemy thirdEnemy = new Enemy(100);
+
+        Warrior first = new Warrior("Albert");
         first.attackEnemy(firstEnemy);
-        Warrior second = new Warrior("Albert");
+        Archer second = new Archer("Artem");
         second.attackEnemy(secondEnemy);
-        Archer third = new Archer("Artem");
-        third.attackEnemy(thirdEnemy);
-        Mage four = new Mage("Degemon");
-        four.attackEnemy(thirdEnemy);
+        Mage third = new Mage("Degemon");
+        third.attackEnemy(thirdEnemy);*/
 
     }
 }
+

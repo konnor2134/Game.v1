@@ -1,15 +1,13 @@
 package game;
 
-import game.Hero;
-
 public class Mage extends Hero {
-    public Mage(String name) {
-        super(name);
+    public Mage(String name,int health) {
+        super(name,health);
     }
 
     @Override
-    void attackEnemy(Enemy taken) {
-        System.out.print(name + " колдует");
-        taken.takeDamage(12);
+    void attackEnemy(Enemy attack) {
+        System.out.print(name + " casts spells,");
+        attack.takeDamage(12);
     }
 }

@@ -1,17 +1,15 @@
 package game;
 
-import game.Hero;
-
 public class Warrior extends Hero {
 
-    public Warrior(String name) {
-        super(name);
+    public Warrior(String name, int health) {
+        super(name,health);
     }
 
     @Override
-    void attackEnemy(Enemy taken) {
-        System.out.print(name + " воюет");
-        taken.takeDamage(20);
+    void attackEnemy(Enemy attack) {
+        System.out.print(name + " attacks with a sword,");
+        attack.takeDamage(20);
 
     }
 
