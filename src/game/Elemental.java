@@ -8,6 +8,6 @@ public class Elemental extends Enemy{
     @Override
     void attackHero(Hero attack) {
         System.out.print(name + " throws a stone,");
-        attack.takeDamage(15);
+        attack.takeDamage(20);
     }
 }

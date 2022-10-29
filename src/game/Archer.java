@@ -8,6 +8,6 @@ public class Archer extends Hero {
     @Override
     void attackEnemy(Enemy attack) {
         System.out.print(name + " shoots a bow,");
-        attack.takeDamage(15);
+        attack.takeDamage(20);
     }
 }

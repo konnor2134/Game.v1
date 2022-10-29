@@ -8,6 +8,6 @@ public class Mage extends Hero {
     @Override
     void attackEnemy(Enemy attack) {
         System.out.print(name + " casts spells,");
-        attack.takeDamage(12);
+        attack.takeDamage(40);
     }
 }

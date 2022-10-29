@@ -19,7 +19,7 @@ public abstract class Enemy implements Mortal {
 
     public int takeDamage(int damage) {
         health -= damage;
-        System.out.println(" the enemy has left " + getHealth() + " hp ");
+        System.out.println(" the enemy "+ name + " has left " + getHealth() + " hp ");
 
         return health;
 
@@ -27,10 +27,10 @@ public abstract class Enemy implements Mortal {
     @Override
     public boolean isAlive() {
         if (getHealth() > 0) {
-            System.out.println("Enemy "+ name + " is alive");
+            System.out.println("Enemy "+ name + " is alive!");
             return true;
         }
-        System.out.println("Enemy "+ name + " is dead");
+        System.out.println("Enemy "+ name + " is dead!");
         return false;
     }
     abstract void attackHero(Hero attack);
